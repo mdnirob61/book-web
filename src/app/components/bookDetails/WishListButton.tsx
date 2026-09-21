@@ -2,6 +2,7 @@
 import { BooksContext } from '@/context/BooksContext';
 import { IBook } from '@/types/bookstype';
 import React, { useContext } from 'react';
+import { toast } from 'react-toastify';
 
 const WishListButton = ({ book }: { book: IBook }) => {
 
@@ -11,7 +12,7 @@ const WishListButton = ({ book }: { book: IBook }) => {
         console.log("wishlist triggered", book);
 
         setWishList([...wishList, book]);
-        alert(`You have added ${book.bookName} to your wishlist`)
+        toast.success(`You have added ${book.bookName} to your wishlist`)
     }
 
     return (
