@@ -36,7 +36,7 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li><Link href="/books">Books</Link></li>
                         <li><Link href="/listedBooks">Listed Books</Link></li>
-                        <li><a>Item 3</a></li>
+                        <li><Link href="/read-books">Read Books</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-4">
