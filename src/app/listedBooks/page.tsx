@@ -3,8 +3,8 @@ import { BooksContext } from '@/context/BooksContext';
 import React, { useContext } from 'react';
 
 const ListedBooks = () => {
-    const {readBooks} = useContext(BooksContext)
-    console.log(readBooks)
+    const {readBooks, wishList} = useContext(BooksContext)
+    console.log(readBooks, wishList, "wish")
     return (
         <div>
             listed books
